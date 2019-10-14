@@ -6,30 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Auto Train Scheduler</title>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
-  <!--jQuery-->
+  <!--Jquery-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!--BootStrap CDN-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!--Font Awesome CDN-->
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!--Moment.js CDN-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron text-white">
       <h1 class="text-center">Kings Cross Station</h1>
-      <h2 class="text-center">Where the Ride Finds You!</h2>
+      <h2><i class="fas fa-subway"></i></h2> 
     </div>
     <div class="panel panel-default">
       <div class="panel-heading text-center">
-        <h2><i class="fas fa-train"></i></h2>
+        <h2></h2>
         <h2 id="currentTime">The Current Time is: </h2>
       </div>
     </div>
@@ -41,11 +40,11 @@
       <div>
         <table id="trainTable">
           <tr>
-            <th><i class="fas fa-train"></i>Train Name</th>
-            <th><i class="fas fa-paper-plane"></i>Destination</th>
-            <th id="times"><i class="far fa-clock"></i>Frequency</th>
-            <th id="times"><i class="far fa-calendar-alt"></i>Next Arrival</th>
-            <th id="times"><i class="far fa-stopwatch"></i>Minutes Away</th>
+            <th><i class="fas fa-subway"></i>Train Name</th>
+            <th><i class="fas fa-fighter-jet"></i>Destination</th>
+            <th id="times"><i class="fas fa-hourglass-half"></i>Frequency (min)</th>
+            <th id="times"><i class="far fa-calendar-check"></i>Next Arrival</th>
+            <th id="times"><i class="fas fa-stopwatch"></i>Minutes Away</th>
           </tr>
         </table>
       </div>
@@ -79,15 +78,15 @@
         </div>
       </div>
     </div>
+
+    
  <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.1.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.1.0/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+ <!--APP.JS file-->
+ <script src="./assets/javascript/app.js"></script>
+ 
 </body>
 
 </html>
